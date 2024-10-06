@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 6214 bytes
+Current configuration : 6216 bytes
 !
-! Last configuration change at 19:03:31 UTC Sun Oct 6 2024 by admin
+! Last configuration change at 19:05:27 UTC Sun Oct 6 2024 by admin
 !
 version 17.3
 service timestamps debug datetime msec
@@ -169,8 +169,8 @@ redundancy
 ! 
 !
 !
-interface Loopback1
- ip address 1.1.1.1 255.255.255.0
+interface Loopback0
+ ip address 2.2.2.2 255.255.255.255
 !
 interface GigabitEthernet1
  ip address 192.168.1.26 255.255.255.0
