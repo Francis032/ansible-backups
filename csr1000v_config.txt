@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 6165 bytes
+Current configuration : 6257 bytes
 !
-! Last configuration change at 15:22:49 UTC Sun Oct 6 2024
+! Last configuration change at 15:48:07 UTC Sun Oct 6 2024 by admin
 !
 version 17.3
 service timestamps debug datetime msec
@@ -13,7 +13,7 @@ platform qfp utilization monitor load 80
 platform punt-keepalive disable-kernel-core
 platform console virtual
 !
-hostname Core1
+hostname APPS1a
 !
 boot-start-marker
 boot-end-marker
@@ -170,6 +170,9 @@ redundancy
 ! 
 !
 !
+interface Loopback1
+ ip address 1.1.1.1 255.255.255.0
+!
 interface GigabitEthernet1
  ip address 192.168.1.25 255.255.255.0
  negotiation auto
@@ -177,15 +180,13 @@ interface GigabitEthernet1
  no mop sysid
 !
 interface GigabitEthernet2
- no ip address
- shutdown
+ ip address 192.168.3.2 255.255.255.0
  negotiation auto
  no mop enabled
  no mop sysid
 !
 interface GigabitEthernet3
- no ip address
- shutdown
+ ip address 192.168.4.2 255.255.255.0
  negotiation auto
  no mop enabled
  no mop sysid
