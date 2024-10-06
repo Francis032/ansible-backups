@@ -1,6 +1,6 @@
 Building configuration...
 
-Current configuration : 6253 bytes
+Current configuration : 6257 bytes
 !
 ! Last configuration change at 15:59:23 UTC Sun Oct 6 2024 by admin
 !
@@ -13,7 +13,7 @@ platform qfp utilization monitor load 80
 platform punt-keepalive disable-kernel-core
 platform console virtual
 !
-hostname R1
+hostname APPS1a
 !
 boot-start-marker
 boot-end-marker
